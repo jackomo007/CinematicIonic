@@ -16,7 +16,8 @@
       </ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
-      <img src="{{content.Poster}}" class="info-img">
+      <img class="info-img" src="{{content.Poster}}" *ngIf="content.Poster != 'N/A'">
+      <img class="info-img" src="https://res.cloudinary.com/dvm6sgg1h/image/upload/v1579291731/cinema/nml7uux6yeq9gh97tcbp.jpg" *ngIf="content.Poster === 'N/A'">
       {{content.Plot}}
       <ion-item lines="none">
         <ion-icon name="star-half" slot="start"></ion-icon>
