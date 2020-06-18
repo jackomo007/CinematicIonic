@@ -13,6 +13,7 @@
       <ion-select-option value="movie">Movie</ion-select-option>
       <ion-select-option value="series">Series</ion-select-option>
       <ion-select-option value="eposide">Episodes</ion-select-option>
+      <ion-select-option value="game">Game</ion-select-option>
     </ion-select>
   </ion-item>
 
@@ -29,6 +30,7 @@
       <ion-icon slot="end" *ngIf="movie.Type === 'movie'" name="recording"></ion-icon>
       <ion-icon slot="end" *ngIf="movie.Type === 'series'" name="tv"></ion-icon>
       <ion-icon slot="end" *ngIf="movie.Type === 'eposide'" name="tablet-portrait"></ion-icon>
+      <ion-icon slot="end" *ngIf="movie.Type === 'game'" name="rocket"></ion-icon>
     </ion-item>
   </ion-list>
 </ion-content>
